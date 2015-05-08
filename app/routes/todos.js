@@ -1,10 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  setupController:function(controller, model){
-  	console.log(JSON.stringify(model));
-  	controller.set('model', model.todos);
-  },
+  // setupController:function(controller, model){
+  // 	this._super(controller, model);
+  // 	console.log(JSON.stringify(model));
+  // 	controller.set('links', model.todos.links);
+  // },
   model: function() {
     return this.store.findAll('todo');
   },

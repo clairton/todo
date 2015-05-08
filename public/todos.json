@@ -32,6 +32,7 @@
       }
    ],
    "links":[
-
-   ]
+      {"rel": "new", "href":"/new"}
+   ],
+   "meta": {"pagination": { "limit": "10", "offset": "10" } }
 }

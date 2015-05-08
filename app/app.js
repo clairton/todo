@@ -7,6 +7,9 @@ var App;
 
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
+var inflector = Ember.Inflector.inflector;
+inflector.irregular('todo', 'todos');
+
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
