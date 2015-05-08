@@ -7,5 +7,13 @@ export default JpaSerializer.extend({
       delete payload.links;
     }
     return this._super(store, type, payload);
+  },
+  
+  extract: function(store, typeClass, payload, id, requestType) {
+    if (payload && payload.links) {
+      //TODO aqui setar os link no model
+      console.log(JSON.stringify(payload.links));
+    }
+    return this._super(store, typeClass, payload, id, requestType);
   }
 });
