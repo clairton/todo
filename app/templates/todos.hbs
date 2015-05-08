@@ -1,5 +1,6 @@
-abc
-
 {{#each m in model}}
-	{{m.id}}
+	{{m.id}}<br/>
+	{{#each link in m.links}}
+		{{link.rel}}
+	{{/each}}
 {{/each}}

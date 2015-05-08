@@ -10,15 +10,30 @@ Todo.reopenClass({
     {
       id: "1",
       title: 'install ember-cli',
-      isCompleted: true
+      isCompleted: true,
+      links:[
+      	{
+      	  rel: 'save'
+      	}
+      ]
    }, {
      id: "2",
      title: 'install additional dependencies',
-     isCompleted: true
+     isCompleted: true,
+      links:[
+      	{
+      	  rel: 'save'
+      	}
+      ]
     }, {
       id: "3",
       title: 'develop amazing things',
-      isCompleted: false
+      isCompleted: false,
+      links:[
+      	{
+      	  rel: 'save'
+      	}
+      ]
   }
 ]});
 
