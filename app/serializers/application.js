@@ -8,12 +8,12 @@ export default JpaSerializer.extend({
     }
     return this._super(store, type, payload);
   },
-  
-  extract: function(store, typeClass, payload, id, requestType) {
+  extractSingle: function(store, typeClass, payload, id, requestType) {
     if (payload && payload.links) {
       //TODO aqui setar os link no model
       console.log(JSON.stringify(payload.links));
     }
-    return this._super(store, typeClass, payload, id, requestType);
+    var normalizedPayload = this.normalizePayload(payload);
+    return this.normalize(typeClass, normalizedPayload);
   }
 });

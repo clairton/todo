@@ -1,10 +1,13 @@
 {{#each m in model}}
 	{{m.id}}<br/>
-	{{#each link in m.links}}
+  {{#each link in m.links}}
 		{{link.rel}}
 	{{/each}}
+  {{m.meta}}
 {{/each}}
-pppp<br/>
+<br/>
+<br/>
+collection<br/>
 {{#each link in links}}
 	{{link.rel}}<br/>
 {{/each}}

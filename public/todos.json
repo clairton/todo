@@ -5,30 +5,33 @@
          "title":"install ember-cli",
          "isCompleted":true,
          "links":[
-            {
-               "rel":"save"
-            }
-         ]
+           {"rel": "new", "href":"/new", "method":"GET"}
+         ],
+         "meta":{
+            "foo": "a"
+         }
       },
       {
          "id":"2",
          "title":"install additional dependencies",
          "isCompleted":true,
          "links":[
-            {
-               "rel":"save"
-            }
-         ]
+           {"rel": "update", "href":"/", "method":"PUT"}
+         ],
+         "meta":{
+            "foo": "b"
+         }
       },
       {
          "id":"3",
          "title":"develop amazing things",
          "isCompleted":false,
          "links":[
-            {
-               "rel":"save"
-            }
-         ]
+           {"rel": "delete", "href":"/", "method":"DELETE"}
+         ],
+         "meta":{
+            "foo": "c"
+         }
       }
    ],
    "links":[
